@@ -6,68 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>calculator</title>
-  <style>
-    * {
-      padding: 0%;
-      margin: 0%;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-image: linear-gradient(red, yellow, green);
-      background-color: rgb(255, 232, 127);
-    }
-
-
-    .h1 {
-      text-align: center;
-      font-size: 200px;
-      margin-top: 1%;
-      color: rgb(216, 9, 235)
-    }
-
-    .container {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    button {
-      margin: 13px;
-      padding: 1%;
-      border-radius: 50%;
-      width: 70px;
-      height: 70px;
-      color: red;
-      font-size: 38px;
-      background-color: black;
-      cursor: pointer;
-    }
-
-    .calu {
-
-
-      border-radius: 50px;
-      box-shadow: -1px -1px 10px 10px rgb(13, 14, 13);
-      background: transparent;
-
-
-
-    }
-
-    #input {
-
-      text-align: center;
-      margin: 20px;
-      font-size: 70px;
-      color: #ffffff;
-      max-width: 350px;
-      overflow: hidden;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -108,31 +47,7 @@
     </div>
   </div>
   </div>
-  <script>
-    let input = document.getElementById("input");
-    let buttons = document.querySelectorAll("button");
-
-    buttons.forEach(button => {
-      button.addEventListener("click", (e) => { // Use 'e' as the event parameter
-        console.log(e.target.textContent); // Use 'textContent' instead of 'textcontent'
-        if (e.target.textContent === "c") {
-          input.innerText = "  ";
-        }
-        else if (e.target.textContent === "C") {
-          input.innerText = input.innerText.slice(0, -1);
-        }
-        else if (e.target.textContent === "=") {
-          input.innerText = eval(input.innerText)
-        }
-        else {
-          input.innerText += e.target.textContent;
-        }
-        input.scrollLeft = input.scrollWidth;
-
-      });
-    });
-
-  </script>
+  <script src="scr.js"></script>
 </body>
 
 </html>

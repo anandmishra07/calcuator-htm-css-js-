@@ -1,0 +1,52 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(red, yellow, green);
+  background-color: rgb(255, 232, 127);
+}
+
+.h1 {
+  text-align: center;
+  font-size: 200px;
+  margin-top: 1%;
+  color: rgb(216, 9, 235);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 13px;
+  padding: 1%;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  color: red;
+  font-size: 38px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.calu {
+  border-radius: 50px;
+  box-shadow: -1px -1px 10px 10px rgb(13, 14, 13);
+  background: transparent;
+}
+
+#input {
+  text-align: center;
+  margin: 20px;
+  font-size: 70px;
+  color: #ffffff;
+  max-width: 350px;
+  overflow: hidden;
+}
